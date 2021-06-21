@@ -17,6 +17,14 @@
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+	<input type="button" value="night" onclick="
+	document.querySelector('body').style.backgroundColor = 'black';
+	document.querySelector('body').style.color = 'white';
+	">
+	<input type="button" value="day" onclick="
+	document.body.style.backgroundColor = 'white';
+	document.body.style.color = 'black';				
+	">
 	<div id="grid">
 		<ol>
         <li><a href="1.html">HTML</a></li> 
@@ -34,7 +42,7 @@
         The resources of the Web are transferred via the Hypertext Transfer Protodcol (HTTP), 
         may be accessed by users by a software application called a web browser, and are published
         by a software application called a web server.
-    </p>
+    <p>
 	<!-- <p> 동영상 삽입 -->
 		<iframe width="100%" height="503" src="https://www.youtube.com/embed/c1Nh2rrl-6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</p>
@@ -58,7 +66,7 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	</p>
+	<p>
 	<!-- <P> 채팅 기능 삽입 //tawk -->
 		<!--Start of Tawk.to Script-->
 	<!-- <script type="text/javascript">
@@ -73,8 +81,8 @@
 	})();
 	</script> -->
 <!--End of Tawk.to Script-->
-	</P>
-		</div>
+	</p>
+		<div>
     
 	</div> 
 </body>
