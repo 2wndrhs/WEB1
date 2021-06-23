@@ -12,20 +12,35 @@
 
 	  gtag('config', 'G-ZBT4V5RN9T');
 	</script>
+	<script>
+		function nightDayHandler(self){
+			var target = document.querySelector('body');
+			if(self.value === 'night') {
+				target.style.backgroundColor = 'black';
+				target.style.color = 'white';
+				self.value = 'day';
+				var alist = document.querySelectorAll('a');
+			for (var i = 0; i<alist.length; i++) {
+				alist[i].style.color = 'blue';
+				}} 
+			else {
+				target.style.backgroundColor = 'white';
+				target.style.color = 'black';										
+				self.value = 'night';
+				var alist = document.querySelectorAll('a');
+				for (var i = 0; i<alist.length; i++) {
+					alist[i].style.color = 'powderblue';
+				}
+		}	
+	}
+	</script>	
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-	<input id = "night_day" type="button" value="night" onclick="
-		if(document.querySelector('#night_day').value === 'night') {
-			document.querySelector('body').style.backgroundColor = 'black';
-	document.querySelector('body').style.color = 'white';
-		document.querySelector('#night_day').value = 'day';} 
-		else {
-			document.body.style.backgroundColor = 'white';
-	document.body.style.color = 'black';
-		document.querySelector('#night_day').value = 'night';}
+	<input type="button" value="night" onclick="
+	nightDayHandler(this);
 	">
 	<div id="grid">
 		<ol>
@@ -44,7 +59,9 @@
         The resources of the Web are transferred via the Hypertext Transfer Protodcol (HTTP), 
         may be accessed by users by a software application called a web browser, and are published
         by a software application called a web server.
+			</p>
     <p>
+		
 	<!-- <p> 동영상 삽입 -->
 		<iframe width="100%" height="503" src="https://www.youtube.com/embed/c1Nh2rrl-6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</p>
