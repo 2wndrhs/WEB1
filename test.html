@@ -1,22 +1,75 @@
+<!DOCTYPE html>
 <html>
-	<title></title>
-	<meta charset = "utf-8">
 	<head>
-	
+		<meta charset = "utf-8">
+		<title></title>
+	<style>
+		td, th{
+			border: 1px solid blue;
+		}
+		</style>
 	</head>
 	<body>
-		<h1>
-			Loop
-		</h1>
-		<ul>
-			<script>
-			var array = ['a', 'b', 'c'];
-			for(var i = 0; i<array.length; i++) {
-				document.write('<li>' + array[i] + '</li>');
-			}
+		<a href = "http://www.naver.com" target = "_blank">네이버</a>
+		<h2>
+			월드컵 조 편성
+		</h2>
+		<ol>
+			<li>A조</li>
+			<ul> <!--ol, ul 태그는 자식요소로 li 태그만 가질 수 있음-->
+				<li>러시아</li>
+				<li>우루과이</li>
+				<li>이집트</li>
+				<li>사우디아라비아</li>
+			</ul>
+			<li>B조</li>
+			<li>C조</li>
+			<li>D조</li>
 			
-		</script>
-		</ul>
-		
+			<table>
+				<caption>Specification values</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Grade.</th>
+						<th rowspan="2">Point.</th>
+						<th colspan="2">Strength.</th>
+						<th rowspan="2">Percent.</th>
+					</tr>
+					<tr>
+						<td>kg/mm</td>
+						<td>lb/in</td>
+						
+					</tr>
+				</thead>
+					
+				<tbody>
+					
+					<tr>
+						<td>Hard</td>
+						<td>0.45</td>
+						<td>56.2</td>
+						<td>80,000</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>Hard</td>
+						<td>0.45</td>
+						<td>56.2</td>
+						<td>80,000</td>
+						<td>20</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>Hard</td>
+						<td>0.45</td>
+						<td>56.2</td>
+						<td>80,000</td>
+						<td>20</td>
+					</tr>
+				</tfoot>
+				
+			</table>
+		</ol>
 	</body>
 </html>
