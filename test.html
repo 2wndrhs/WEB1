@@ -3,6 +3,7 @@
 	<head>
 		<meta charset = "utf-8">
 		<title></title>
+		<link rel = "stylesheet" href="style.css">
 	<style>
 		td, th{
 			border: 1px solid blue;
@@ -25,7 +26,7 @@
 			<li>B조</li>
 			<li>C조</li>
 			<li>D조</li>
-			
+		</ol>	
 			<table>
 				<caption>Specification values</caption>
 				<thead>
@@ -68,8 +69,55 @@
 						<td>20</td>
 					</tr>
 				</tfoot>
-				
 			</table>
-		</ol>
+		<form action="/index.html" method = "post">
+			<fieldset>
+				<legend>
+					필수 정보
+				</legend>
+				<div>
+			<label for = "id">아이디:</label> <input type = "text" placeholder = "ID" id="id">
+		</div>
+		<div>
+			<label for = "pwd">비밀번호:</label> <input type = "password" placeholder = "password" id="pwd">
+		</div>
+		
+			<div>
+				성별: <label for = "male">남자</label><input type = "radio" name = "sex" checked id="male"> <label for = "female">여자</label><input type = "radio" name = "sex" id = "female">
+		</div>				
+			</fieldset>
+		<fieldset>
+			<legend>
+				부가 정보
+			</legend>
+			<div>
+			취미: <label for = "soccer">축구</label> <input id = "soccer" type = "checkbox" name = "hobby" checked> <label for = "basketball">농구</label> <input id = "basketball" type = "checkbox" name = "hobby"> <label for = "badminton">배드민턴</label><input id = "badminton" type = "checkbox" name = "hobby">
+		</div>
+		<div>
+			<label for="upload">프로필 사진 업로드</label> <br>
+			<input id = "upload" type = "file">
+		</div>
+		<div>
+			<label for="area">사는 지역:</label>  
+			<select id = "area">
+				<option selected>서울</option>
+				<option>경기</option>
+				<option>부산</option>
+				<option>제주</option>
+			</select>
+		<div>
+			<label for = "pr">자기 소개:</label> <textarea id = "pr" cols = "30" rows = "5" placeholder = "자기 소개 입력"></textarea>
+			</div>
+		</div>
+		<div>
+			<button type = "submit">
+				submit
+			</button>
+			<button type = "reset">
+				reset
+			</button>
+			</div>
+			</fieldset>		
+		</form>
 	</body>
 </html>
