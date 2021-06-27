@@ -1,0 +1,33 @@
+/* p.bar p태그 bar 클래스가 있어야 적용
+
+.bar.foo foo 와 bar 클래스 모두 있어야 적용
+
+#foo.bar foo 아이디와 bar 클래스 모두 있어야 적용
+
+p[class] p 태그에 class 속성이 있어야 적용
+
+p[class][id] p 태그에 class 속성과 id 속성 모두 있어야 적용
+
+p[class = "foo"] p 태그에 foo 클래스가 있어야 적용
+
+p[id = "foo"] p 태그에 foo 아이디가 있어야 적용
+
+p[class = "foo"][id="title"] p 태그에 foo 클래스와 title 아이디가 있어야 적용
+
+[class~="bar"] : class 속성의 값이 공백으로 구분한 "bar" 단어가 포함되는 요소 선택
+
+[class^="bar"] : class 속성의 값이 "bar"로 시작하는 요소 선택
+
+[class$="bar"] : class 속성의 값이 "bar"로 끝나는 요소 선택
+
+[class*="bar"] : class 속성의 값이 "bar" 문자가 포함되는 요소 선택
+
+div span  <div>의 자손 요소인 <span>를 선택하는 선택자 
+
+div > h1 <div>의 자식 요소인 <h1>를 선택하는 선택자 
+
+div + p 인접 형제 선택자는 형제 관계이면서 바로 뒤에 인접해 있는 요소를 선택하는 선택자
+*/
+div + span{
+	color: red;
+}
