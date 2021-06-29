@@ -132,6 +132,56 @@ A 값은 0 ~ 1 사이의 값을 지정할 수 있으며, 0.5와 같이 소수점
 이때 부모의 height는 content 영역의 크기를 의미한다.
 
 (부모 요소의 명시적인 height값 필요)
+
+//line-height//
+기본값: normal
+줄 높이를 정하는 속성(행간 제어)
+
+number 부모 요소의 숫자 값이 그대로 상속됩니다. 즉, 자식 요소에서도 또 한 번 자식 요소의 font-size를 기준으로 계산된 값을 가집니다.
+
+% 부모 요소에서 %값이 그대로 상속되는 것이 아니고, %에 의해 이미 계산된 px값이 상속됩니다.
+
+//font-size//
+기본값: medium
+글꼴의 기본 크기: 16px=1em
+
+//font-weight//
+normal: 400
+bold: 700
+
+//font-style//
+normal: font-family 내에 분류된 기본 값
+
+italic: italic 스타일로 표현합니다.
+
+//vertical-align//
+기본값: baseline=0
+인라인 레벨 요소에만 사용 가능
+
+//text-align//
+text-align은 inline-level에 적용
+text-align은 block-level에 적용할 수 없음 
+
+//text-decoration//
+텍스트의 장식을 지정하는 속성
+
+//white-space//
+요소 안 공백 처리
+normal: 공백과 개행을 무시하고, 필요한 경우에 자동 줄바꿈 발생. 기본 값
+nowrap: 공백과 개행을 무시하고, 자동 줄바꿈이 일어나지 않음.
+
+//letter-spacing//
+자간 조정
+
+//word-spacing//
+단어간 간격 조정
+
+//word-break//
+단어가 라인 끝에 나올 경우 어떻게 처리할지(중단점) 지정하는 속성
+
+//word-wrap//
+요소를 벗어난 단어의 줄바꿈을 지정하는 속성
+
 */
 
 
