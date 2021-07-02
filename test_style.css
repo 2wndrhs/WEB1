@@ -208,9 +208,43 @@ both: 양쪽으로 floating 요소를 허용하지 않음
 
 //position//
 static: Normal-flow 에 따라 배치되며 offset 값이 적용되지 않는다. (기본값)
+
 relative: Normal-flow 에 따라 배치
+
+자신이 원래 있어야 할 위치를 기준으로 offset 에 따라 배치된다.
+
+부모의 position 속성에 영향을 받지 않는다.
+
 absolute: Normal-flow의 흐름에서 벗어난다. display를 block으로 가짐
-fixed: Normal-flow의 흐름에서 벗어난다.
+
+부모 요소의 위치를 기준으로 offset 에 따라 배치된다.
+
+부모가 position 값(static 제외)을 가지면 offset 값의 시작점이 된다.
+
+* 부모의 position 값이 static 인 경우 조상의 position 값이 static이
+    아닐 때까지 거슬러 올라가 기준으로 삼습니다.
+
+fixed: Normal-flow의 흐름에서 벗어난다. display를 block으로 가짐
+
+뷰포트(브라우저의 창)를 기준으로 offset 에 따라 배치된다.
+
+즉, 화면 스크롤에 관계없이 항상 화면의 정해진 위치에 정보가 나타난다.
+
+부모의 위치에 영향을 받지 않는다.
+
+//z-index//
+요소가 겹치는 순서를 지정하는 속성
+
+position 값이 static이 아닌 경우 지정가능
+
+순서 값이 없을 경우 생성순서(코드상 순서)에 따라 쌓임
+
+부모가 z-index 값이 있을 경우 부모 안에서만 의미있음
+
+큰 값이 가장 위쪽(음수 사용 가능)
+
+//media query//
+미디어 매체에 따라 다른 스타일(css style)을 적용할 수 있게 만드는 것
 */
 
 
