@@ -185,7 +185,7 @@ nowrap: 공백과 개행을 무시하고, 자동 줄바꿈이 일어나지 않�
 //display//
 inline: width, height 속성 적용 X / margin, padding, border 속성 좌우만 선언해서 사용
 
-inline-block(inline처럼 배치, block: box model 속성 적용 O
+inline-block(inline처럼 배치, block: box model 속성 적용 O)
 
 //visibility//
 visible: 요소 보임
