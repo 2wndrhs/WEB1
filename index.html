@@ -12,36 +12,15 @@
 
 	  gtag('config', 'G-ZBT4V5RN9T');
 	</script>
-	<script>
-		function nightDayHandler(self){
-			var target = document.querySelector('body');
-			if(self.value === 'night') {
-				target.style.backgroundColor = 'black';
-				target.style.color = 'white';
-				self.value = 'day';
-				var alist = document.querySelectorAll('a');
-			for (var i = 0; i<alist.length; i++) {
-				alist[i].style.color = 'blue';
-				}} 
-			else {
-				target.style.backgroundColor = 'white';
-				target.style.color = 'black';					
-				self.value = 'night';
-				var alist = document.querySelectorAll('a');
-				for (var i = 0; i<alist.length; i++) {
-					alist[i].style.color = 'powderblue';
-				}
-		}	
-	}
-	</script>	
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-	<input type="button" value="night" onclick="
-	nightDayHandler(this);
-	">
+	<input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black';
+		document.querySelector('body').style.color='white';">
+	<input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white';
+			document.querySelector('body').style.color='black';">
 	<div id="grid">
 		<ol>
         <li><a href="1.html">HTML</a></li> 
